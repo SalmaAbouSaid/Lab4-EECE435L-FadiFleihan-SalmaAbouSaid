@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>university_management module &mdash; PyQt University Management Application 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="models module" href="models.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PyQt University Management Application
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pyQtApplication</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="classes.html">classes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="models.html">models module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">university_management module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#university_management.SchoolManagementSystem"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.add_course"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.add_course()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.add_instructor"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.add_instructor()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.add_student"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.add_student()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.courses"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.courses</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.create_course_tab"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_course_tab()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.create_instructor_tab"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_instructor_tab()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.create_student_tab"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.create_student_tab()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.export_to_csv"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.export_to_csv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.instructors"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.instructors</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.load_data_courses"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.load_data_courses()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.load_data_instructors"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.load_data_instructors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.load_data_students"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.load_data_students()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.save_data"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.save_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.students"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.students</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.update_course_table"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.update_course_table()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.update_instructor_table"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.update_instructor_table()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.update_json_data_courses"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.update_json_data_courses()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.update_json_data_instructors"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.update_json_data_instructors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.update_json_data_students"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.update_json_data_students()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#university_management.SchoolManagementSystem.update_student_table"><code class="docutils literal notranslate"><span class="pre">SchoolManagementSystem.update_student_table()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyQt University Management Application</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">pyQtApplication</a></li>
+      <li class="breadcrumb-item active">university_management module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/university_management.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-university_management">
+<span id="university-management-module"></span><h1>university_management module<a class="headerlink" href="#module-university_management" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">university_management.</span></span><span class="sig-name descname"><span class="pre">SchoolManagementSystem</span></span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMainWindow</span></code></p>
+<p>This class is made for the interface of managing university courses, their instructors, and the student records. This class inherits from QMainWindow which
+defined in the PyQt library.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError</strong> – if instructor not found</p></li>
+<li><p><strong>ValueError</strong> – if student not found</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.add_course">
+<span class="sig-name descname"><span class="pre">add_course</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.add_course"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.add_course" title="Link to this definition"></a></dt>
+<dd><p>Adds a new course to the system.</p>
+<p>This method retrieves course details from the form, validates the input,
+and creates a <cite>Course</cite> object. If the validation is successful, the new
+course is added to the database and the UI is updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError</strong> – If the course ID is not a valid integer or if the
+    specified instructor or student is not found.</p></li>
+<li><p><strong>ValidationError</strong> – If the course data fails schema validation.</p></li>
+<li><p><strong>Exception</strong> – For any other errors encountered during the process.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Updates:</dt><dd><ul class="simple">
+<li><p>Adds the new course to the list of courses.</p></li>
+<li><p>Updates dropdowns for registered courses and assigned courses.</p></li>
+<li><p>Updates the course table in the UI.</p></li>
+</ul>
+</dd>
+<dt>Displays:</dt><dd><ul class="simple">
+<li><p>A message box indicating success or failure of the operation.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.add_instructor">
+<span class="sig-name descname"><span class="pre">add_instructor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.add_instructor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.add_instructor" title="Link to this definition"></a></dt>
+<dd><p>Adds a new instructor to the system.</p>
+<p>This method retrieves instructor details from the form, validates the input,
+and creates an <cite>Instructor</cite> object. If the validation is successful, the new
+instructor is added to the database and the UI is updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError</strong> – If age or instructor ID is not a valid integer.</p></li>
+<li><p><strong>ValidationError</strong> – If the instructor data fails schema validation.</p></li>
+<li><p><strong>Exception</strong> – For any other errors encountered during the process.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Updates:</dt><dd><ul class="simple">
+<li><p>Adds the new instructor to the dropdown for instructor selection.</p></li>
+<li><p>Updates the instructor table in the UI.</p></li>
+</ul>
+</dd>
+<dt>Displays:</dt><dd><ul class="simple">
+<li><p>A message box indicating success or failure of the operation.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.add_student">
+<span class="sig-name descname"><span class="pre">add_student</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.add_student"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.add_student" title="Link to this definition"></a></dt>
+<dd><p>Adds a new student to the system.</p>
+<p>This method retrieves student details from the form, validates the input,
+and creates a <cite>Student</cite> object. If the validation is successful, the new
+student is added to the database and the UI is updated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ValueError</strong> – If age or student ID is not a valid integer.</p></li>
+<li><p><strong>ValidationError</strong> – If the student data fails schema validation.</p></li>
+<li><p><strong>Exception</strong> – For any other errors encountered during the process.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Updates:</dt><dd><ul class="simple">
+<li><p>Adds the new student to the <cite>students</cite> list.</p></li>
+<li><p>Updates the student table in the UI.</p></li>
+</ul>
+</dd>
+<dt>Displays:</dt><dd><ul class="simple">
+<li><p>A message box indicating success or failure of the operation.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.courses">
+<span class="sig-name descname"><span class="pre">courses</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#university_management.SchoolManagementSystem.courses" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.create_course_tab">
+<span class="sig-name descname"><span class="pre">create_course_tab</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.create_course_tab"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.create_course_tab" title="Link to this definition"></a></dt>
+<dd><p>creates course tab GUI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.create_instructor_tab">
+<span class="sig-name descname"><span class="pre">create_instructor_tab</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.create_instructor_tab"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.create_instructor_tab" title="Link to this definition"></a></dt>
+<dd><p>creates instructor tab GUI.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.create_student_tab">
+<span class="sig-name descname"><span class="pre">create_student_tab</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.create_student_tab"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.create_student_tab" title="Link to this definition"></a></dt>
+<dd><p>creates a student tab GUI.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.export_to_csv">
+<span class="sig-name descname"><span class="pre">export_to_csv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.export_to_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.export_to_csv" title="Link to this definition"></a></dt>
+<dd><p>Export current student, instructor, and course data to a CSV file.</p>
+<p>This method loads data from existing JSON files for students, instructors,
+and courses, and writes the consolidated data into a CSV file named
+‘exported_csv.csv’ in the current working directory. The CSV file is organized
+into three sections: Students, Instructors, and Courses, each with a header row.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>IOError</strong> – If any of the JSON files cannot be opened or read.</p></li>
+<li><p><strong>Exception</strong> – For any other errors encountered during the CSV writing process.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.instructors">
+<span class="sig-name descname"><span class="pre">instructors</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#university_management.SchoolManagementSystem.instructors" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.load_data_courses">
+<span class="sig-name descname"><span class="pre">load_data_courses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.load_data_courses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.load_data_courses" title="Link to this definition"></a></dt>
+<dd><p>Load course data from the given JSON data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.load_data_instructors">
+<span class="sig-name descname"><span class="pre">load_data_instructors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.load_data_instructors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.load_data_instructors" title="Link to this definition"></a></dt>
+<dd><p>Load instructor data from the given JSON data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.load_data_students">
+<span class="sig-name descname"><span class="pre">load_data_students</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.load_data_students"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.load_data_students" title="Link to this definition"></a></dt>
+<dd><p>Load student data from the given JSON data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.save_data">
+<span class="sig-name descname"><span class="pre">save_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.save_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.save_data" title="Link to this definition"></a></dt>
+<dd><p>updates all json data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.students">
+<span class="sig-name descname"><span class="pre">students</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#university_management.SchoolManagementSystem.students" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.update_course_table">
+<span class="sig-name descname"><span class="pre">update_course_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.update_course_table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.update_course_table" title="Link to this definition"></a></dt>
+<dd><p>Update course table based on the courses list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.update_instructor_table">
+<span class="sig-name descname"><span class="pre">update_instructor_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.update_instructor_table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.update_instructor_table" title="Link to this definition"></a></dt>
+<dd><p>Update instructor table based on the instructors list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.update_json_data_courses">
+<span class="sig-name descname"><span class="pre">update_json_data_courses</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.update_json_data_courses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.update_json_data_courses" title="Link to this definition"></a></dt>
+<dd><p>Update the JSON file with current course data.</p>
+<p>This method collects data from all courses in the system and
+writes it to a JSON file named ‘data.json’. Each course’s
+details, including course_name, id, instructor, and students are stored in a structured format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>IOError</strong> – If the file cannot be opened for writing.</p></li>
+<li><p><strong>Exception</strong> – For any other errors encountered during the process.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.update_json_data_instructors">
+<span class="sig-name descname"><span class="pre">update_json_data_instructors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.update_json_data_instructors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.update_json_data_instructors" title="Link to this definition"></a></dt>
+<dd><p>Update the JSON file with current instructor data.</p>
+<p>This method collects data from all instructors in the system and
+writes it to a JSON file named ‘data.json’. Each instructor’s
+details, including name, age, email, instructor ID, and assigned
+courses, are stored in a structured format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>IOError</strong> – If the file cannot be opened for writing.</p></li>
+<li><p><strong>Exception</strong> – For any other errors encountered during the process.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.update_json_data_students">
+<span class="sig-name descname"><span class="pre">update_json_data_students</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.update_json_data_students"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.update_json_data_students" title="Link to this definition"></a></dt>
+<dd><p>Update the JSON file with current student data.</p>
+<p>This method collects data from all students in the system and
+writes it to a JSON file named ‘data.json’. Each student’s
+details, including name, age, email, student ID, and registered
+courses, are stored in a structured format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>IOError</strong> – If the file cannot be opened for writing.</p></li>
+<li><p><strong>Exception</strong> – For any other errors encountered during the process.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="university_management.SchoolManagementSystem.update_student_table">
+<span class="sig-name descname"><span class="pre">update_student_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/university_management.html#SchoolManagementSystem.update_student_table"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#university_management.SchoolManagementSystem.update_student_table" title="Link to this definition"></a></dt>
+<dd><p>Update student table based on the students list.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="models.html" class="btn btn-neutral float-left" title="models module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Salma Abou Said and Fadi Fleihan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
