@@ -1,0 +1,47 @@
+{
+    "courses": [
+    {
+      "course_id": 435,
+      "course_name": "EECE 435L",
+      "instructor_id": 2001,
+      "enrolled_students": [1001,1002]
+    },
+    {
+      "course_id": 331,
+      "course_name": "EECE 331",
+      "instructor_id": 2002,
+      "enrolled_students": [1003]
+    },
+    {
+      "course_id": 442,
+      "course_name": "EECE 442",
+      "instructor_id": 2003,
+      "enrolled_students": [1001]
+    },
+    {
+      "course_id": 240,
+      "course_name": "CMPS 240",
+      "instructor_id": 2002,
+      "enrolled_students": [1002]
+    },
+    {
+      "course_id": 285,
+      "course_name": "CMPS 285",
+      "instructor_id": 2003,
+      "enrolled_students": [1002]
+    },
+    {
+      "course_id": 201,
+      "course_name": "CIVE 201",
+      "instructor_id": 2002,
+      "enrolled_students": [1003]
+    },
+    {
+      "course_id": 234,
+      "course_name": "t",
+      "instructor_id": 2002,
+      "enrolled_students": [1003]
+    }
+    
+  ]
+}

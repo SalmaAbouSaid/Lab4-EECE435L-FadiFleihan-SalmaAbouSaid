@@ -1,0 +1,25 @@
+{
+    "instructors": [
+        {
+          "name": "Dr. Joe H.",
+          "age": 45,
+          "_email": "dr.joe@example.com",
+          "instructor_id": 2001,
+          "assigned_courses": ["EECE 435", "EECE 425"]
+        },
+        {
+          "name": "Prof. Kamal N.",
+          "age": 50,
+          "_email": "prof.kamal@example.com",
+          "instructor_id": 2002,
+          "assigned_courses": ["EECE 331", "CIVE 201"]
+        },
+        {
+          "name": "Dr. Dana Baalbaki",
+          "age": 40,
+          "_email": "dr.dana@example.com",
+          "instructor_id": 2003,
+          "assigned_courses": ["EECE 442", "CMPS 285"]
+        }
+      ]
+}

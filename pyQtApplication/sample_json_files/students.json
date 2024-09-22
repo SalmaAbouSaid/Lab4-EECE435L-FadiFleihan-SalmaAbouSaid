@@ -1,0 +1,26 @@
+{
+    "students": [
+      {
+        "name": "Alice",
+        "age": 20,
+        "_email": "alice@example.com",
+        "student_id": 1001,
+        "registered_courses": ["EECE435", "EECE240"]
+      },
+      {
+        "name": "Joe",
+        "age": 22,
+        "_email": "joe@example.com",
+        "student_id": 1002,
+        "registered_courses": ["EECE 331", "EECE 201"]
+      },
+      {
+        "name": "Carmen",
+        "age": 21,
+        "_email": "carmen@example.com",
+        "student_id": 1003,
+        "registered_courses": ["EECE 442", "CMPS 285"]
+      }
+    ]
+  }
+  
